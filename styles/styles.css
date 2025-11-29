@@ -112,101 +112,6 @@ header nav a:hover {
   opacity: 0.7;
 }
 
-.introduction {
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  align-items: center;
-  padding-bottom: 32px;
-}
-
-.introduction aside {
-  padding-left: 32px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  font-size: 1.2rem;
-}
-.introduction img {
-  aspect-ratio: 3/2;
-}
-
-.introduction aside h2 {
-  color: var(--accent-color);
-}
-
-.services {
-  background-color: var(--primary-color);
-  color: #fff;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.services > div {
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  justify-content: space-between;
-}
-
-.services a {
-  color: var(--accent-color);
-  font-weight: 700;
-}
-
-.services a:hover {
-  opacity: 0.9;
-}
-
-.servicetext {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-.servicetext h2 {
-  color: var(--tertiary-color);
-}
-
-.servicetext ul {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.servicetext li {
-  margin-left: 32px;
-}
-
-@media screen and (max-width: 800px) {
-  .logotext {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 1440px) {
-  .introduction {
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  .introduction aside {
-    padding-right: 32px;
-  }
-
-  .services > div {
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-
-  .servicetext {
-    padding-top: 16px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-}
-
 footer {
   background-color: #000;
   padding-top: 32px;
@@ -243,6 +148,12 @@ footer p a:hover {
   opacity: 0.8;
 }
 
+@media screen and (max-width: 800px) {
+  .logotext {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 580px) {
   h1 {
     font-size: 1.8rem;
@@ -254,14 +165,6 @@ footer p a:hover {
 
   header {
     padding: 8px;
-  }
-
-  .introduction aside {
-    font-size: 1rem;
-  }
-
-  .introduction img {
-    width: 100%;
   }
   .logo {
     height: 54px;
