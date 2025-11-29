@@ -44,13 +44,22 @@
         </p>
       </section>
       <section class="contact">
-        <form>
-          <label for="name">Name <span aria-hidden="true">*</span></label>
-          <input type="text" id="name" name="name" required />
-          <label for="mail">E-mail <span aria-hidden="true">*</span></label>
-          <input type="email" id="mail" name="mail" required />
-          <label for="body">Message <span aria-hidden="true">*</span></label>
-          <textarea id="body" name="body" rows="4" required></textarea>
+        <form id="contactForm" novalidate>
+          <label for="name">Name<span aria-hidden="true">*</span></label>
+          <div class="input-container">
+            <p class="error" id="nameError" aria-live="polite"></p>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <label for="mail">E-mail<span aria-hidden="true">*</span></label>
+          <div class="input-container">
+            <p class="error" id="mailError" aria-live="polite"></p>
+            <input type="email" id="mail" name="mail" required />
+          </div>
+          <label for="message">Message<span aria-hidden="true">*</span></label>
+          <div class="input-container">
+            <p class="error" id="messageError" aria-live="polite"></p>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
           <br />
           <button type="submit">Submit Form</button>
         </form>
@@ -88,5 +97,6 @@
         >
       </p>
     </footer>
+    <script src="/contact/contact.js"></script>
   </body>
 </html>

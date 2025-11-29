@@ -31,6 +31,17 @@ main {
 .contact > form input,
 .contact > form textarea {
   border-radius: 5px;
+  width: 100%;
+  padding: 2px 8px;
+  border: 2px solid var(--primary-color);
+}
+
+.input-container {
+  width: 100%;
+}
+.error {
+  font-size: 0.8rem;
+  color: var(--accent-color);
 }
 
 .contact > form button {

@@ -7,17 +7,23 @@
   padding-top: 32px;
   padding-bottom: 32px;
   display: flex;
-  max-width: 1200px;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.gallery > img {
-  width: 33%;
+.thumb-bar {
+  display: flex;
+}
+.thumb-bar > img {
+  max-width: 100%;
+  min-width: 0;
 }
 
-.gallery > img:focus,
-.gallery > img:hover {
+.thumb-bar > img:focus,
+.thumb-bar > img:hover {
   z-index: 2;
   outline: 3px solid var(--accent-color);
   cursor: pointer;
