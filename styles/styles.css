@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+:root {
+  font-family: "Exo 2", sans-serif;
+  font-size: 18px;
+  color: var(--primary-color);
+
+  --primary-color: #372518;
+  --accent-color: #cd5f36;
+  --tertiary-color: #e9e1d0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--tertiary-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Orbitron";
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+strong {
+  font-weight: 700;
+}
+
+blockquote {
+  font-family: "Orbitron";
+  font-weight: 700;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  padding: 16px;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logodiv {
+  display: flex;
+  align-items: center;
+}
+
+.logotext {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logoname {
+  font-family: "Orbitron";
+  font-weight: 700;
+  color: var(--primary-color);
+  font-size: 2rem;
+}
+
+.logoextra {
+  font-weight: 700;
+  color: var(--accent-color);
+  font-size: 1.5rem;
+}
+
+header nav {
+  display: flex;
+  gap: 24px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-family: "Orbitron";
+  font-weight: bold;
+}
+
+header nav a:hover {
+  opacity: 0.7;
+}
+
+.introduction {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  padding-bottom: 32px;
+}
+
+.introduction aside {
+  padding-left: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 1.2rem;
+}
+.introduction img {
+  aspect-ratio: 3/2;
+}
+
+.introduction aside h2 {
+  color: var(--accent-color);
+}
+
+.services {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.services > div {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.services a {
+  color: var(--accent-color);
+  font-weight: 700;
+}
+
+.services a:hover {
+  opacity: 0.9;
+}
+
+.servicetext {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.servicetext h2 {
+  color: var(--tertiary-color);
+}
+
+.servicetext ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.servicetext li {
+  margin-left: 32px;
+}
+
+@media screen and (max-width: 800px) {
+  .logotext {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .introduction {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .introduction aside {
+    padding-right: 32px;
+  }
+
+  .services > div {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .servicetext {
+    padding-top: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+footer {
+  background-color: #000;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: #fff;
+}
+
+footer nav {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+footer nav a {
+  color: var(--accent-color);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+footer nav a:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 580px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  header {
+    padding: 8px;
+  }
+
+  .introduction aside {
+    font-size: 1rem;
+  }
+
+  .introduction img {
+    width: 100%;
+  }
+  .logo {
+    height: 54px;
+    width: 54px;
+  }
+  header nav {
+    gap: 16px;
+    font-size: 0.9rem;
+  }
+}
