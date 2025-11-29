@@ -1,0 +1,60 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.introduction {
+  padding: 32px;
+  font-size: 1.2rem;
+  max-width: 1200px;
+}
+.contact {
+  padding: 32px;
+  max-width: 1200px;
+  display: flex;
+  gap: 32px;
+  font-size: 1.2rem;
+}
+
+.contact > form {
+  min-width: 50%;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 8px;
+}
+
+.contact > form label {
+  font-weight: 700;
+}
+
+.contact > form input,
+.contact > form textarea {
+  border-radius: 5px;
+}
+
+.contact > form button {
+  background: none;
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  color: var(--primary-color);
+}
+
+.contact > form button:hover,
+.contact > form button:focus {
+  background-color: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+}
+.contact > aside {
+  min-width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media screen and (max-width: 800px) {
+  .contact {
+    flex-direction: column;
+  }
+}
