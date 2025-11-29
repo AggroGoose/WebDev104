@@ -212,6 +212,10 @@ footer {
   padding-top: 32px;
   padding-bottom: 32px;
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 }
 
 footer nav {
@@ -227,6 +231,15 @@ footer nav a {
 }
 
 footer nav a:hover {
+  opacity: 0.8;
+}
+
+footer p a {
+  text-decoration: none;
+  color: var(--accent-color);
+}
+
+footer p a:hover {
   opacity: 0.8;
 }
 
